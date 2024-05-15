@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    <div class="loginContainer">
+      <h2 class="loginHeading">Login</h2>
+      <form id="loginForm" action="/loginConfirm" method="POST">
+        <div class="inputGroup">
+          <label for="email" class="inputGroupLabel">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="inputGroupInput"
+            required
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="password" class="inputGroupLabel">Password:</label>
+          <div class="passwordContainer">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="inputGroupInput passwordInput"
+              required
+            />
+            <span class="togglePassword" onclick="togglePasswordVisibility()">
+              <i class="fa fa-eye" id="eyeIcon"></i>
+            </span>
+          </div>
+        </div>
+        <button type="submit" class="loginButton">Login</button>
+        <p>
+          Don't have an account?
+          <a class="signupButton" href="/signup">Sign Up</a>
+        </p>
+      </form>
+    </div>
+    <script src="../static/index.js"></script>
+  </body>
+</html>

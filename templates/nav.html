@@ -1,0 +1,38 @@
+<head>
+  <link rel="stylesheet" href="../static/nav.css" />
+</head>
+<nav class="navBar">
+  <div class="logoContainer">
+    <a href="/">
+      <img
+        src="https://www.riseservices.org/wp-content/uploads/2023/02/ResumeBuilder-Logo-PNG.png"
+        alt=""
+        height="75px"
+    /></a>
+  </div>
+  <div class="header">
+    <h1>Resume Builder</h1>
+  </div>
+  <div class="menuList">
+    <ul>
+      <li><a href="/" id="loginButton">Login</a></li>
+      <li><a href="/signup" id="signupButton">Sign Up</a></li>
+      <li><a href="/logout" id="logoutButton">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const loginButton = document.querySelector("#loginButton");
+    const signupButton = document.querySelector("#signupButton");
+    const logoutButton = document.querySelector("#logoutButton");
+
+    if ("{{ session.email }}") {
+      loginButton.style.display = "none";
+      signupButton.style.display = "none";
+      logoutButton.style.display = "block";
+    } else {
+      logoutButton.style.display = "none";
+    }
+  });
+</script>

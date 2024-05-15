@@ -1,0 +1,29 @@
+.navBar {
+  /* background-color: #13417f; */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, #020024 0%, #090979 50%, #00d4ff 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  font-size: 1.3rem;
+}
+.navBar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.navBar ul {
+  display: flex;
+  list-style: none;
+}
+.navBar a:hover {
+  color: #d4d0d0;
+}
+.logoContainer {
+  padding: 10px;
+}
+.logoContainer img {
+  filter: drop-shadow(2px 2px 1px white);
+}

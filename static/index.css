@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* background: radial-gradient(to top, #13417f, #1b6ca8); */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(-180deg, #020024 0%, #090979 50%, #00d4ff 100%);
+  min-height: 100vh;
+}
+
+.loginContainer {
+  background-color: #fff;
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginHeading {
+  color: #13417f;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.inputGroupLabel {
+  display: block;
+  margin-bottom: 10px;
+  color: #13417f;
+  text-align: left;
+}
+
+.inputGroupInput {
+  width: calc(100% - 32px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.togglePassword {
+  position: absolute;
+  right: 10px;
+  bottom: 26px;
+  cursor: pointer;
+}
+.togglePassword i {
+  color: rgba(0, 0, 0, 0.485);
+}
+.togglePassword i:hover {
+  color: black;
+}
+.loginButton {
+  background-color: #13417f;
+  font-size: 1rem;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.signupButton {
+  text-decoration: none;
+}
+.loginButton:hover {
+  background-color: #0d2c4b;
+}
+.signupButton:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../static/signup.css" />
+  </head>
+  <body>
+    {% include 'nav.html' %}
+
+    <div class="signupContainer">
+      <h2 class="signupHeading">Sign Up</h2>
+      <form id="signupForm" action="/signupconfirm" method="post">
+        <div class="inputGroup">
+          <label for="username" class="inputGroupLabel">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="inputGroupInput"
+            required
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="email" class="inputGroupLabel">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="inputGroupInput"
+            required
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="password" class="inputGroupLabel">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="inputGroupInput"
+            required
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="confirmPassword" class="inputGroupLabel"
+            >Confirm Password:</label
+          >
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            class="inputGroupInput"
+            required
+          />
+          <span id="passwordError" class="error" style="color: red"></span>
+        </div>
+        <button type="submit" class="signupButton">Sign Up</button>
+        <p>Back to <a href="/">Login?</a></p>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../static/signup.js"></script>
+  </body>
+</html>

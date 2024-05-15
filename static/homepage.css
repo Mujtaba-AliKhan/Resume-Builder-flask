@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* body {
+  overflow-x: hidden;
+} */
+
+.bgContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  max-width: 100vw;
+}
+.previewResume,
+.resumeForm {
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.resumeForm {
+  border-radius: 10px;
+}
+.previewName {
+  text-align: center;
+  color: white;
+  background-color: #13417f;
+  padding: 15px;
+  text-transform: capitalize;
+  margin-top: 0;
+}
+.previewContainer {
+  max-height: calc(100vh - 40px);
+  width: 850px;
+  position: sticky;
+  overflow-y: auto;
+  top: 10px;
+}
+.previewResume {
+  margin: 0;
+  padding: 0;
+}
+
+.previewHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(46, 46, 46);
+}
+.resumwButtonContainer i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0 15px;
+}
+.resumwButtonContainer i:hover {
+  color: rgb(195, 195, 195);
+}
+.resumeForm {
+  width: 600px;
+}
+.resumeDetailsContainer {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.resumeLeft {
+  background-color: rgb(194, 194, 194);
+  border-right: 2px solid black;
+  padding: 10px;
+}
+
+.resumeRight {
+  padding: 10px;
+}
+.submitBtn,
+.clearBtn {
+  background-color: #13417f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover,
+.clearBtn:hover {
+  background-color: #0c2b57;
+}
+.titleHeading {
+  text-align: center;
+  padding: 20px;
+  background-color: #13417f;
+  color: white;
+}
+.skillItemContainer li,
+.langItemContainer li,
+.hobbyItemContainer li {
+  display: inline-flex;
+  border: 1px solid grey;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.skillX,
+.langX,
+.hobbyX {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.skillX:hover,
+.langX:hover,
+.hobbyX:hover {
+  filter: drop-shadow(5px 5px 5px black);
+}
+.skillItemContainer,
+.langItemContainer,
+.hobbyItemContainer {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.previewSkills li i,
+.previewLang li i,
+.previewHobby li i {
+  display: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+.experienceContainer,
+.educationContainer,
+.aboutMeContainer,
+.basicDetailContainer,
+.attributesContainer {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.experienceDisplay,
+.educationDisplay {
+  background-color: #f0f0f0;
+  padding: 10px;
+  position: relative;
+  overflow-wrap: break-word;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.previewExperience i,
+.previewEducation i {
+  display: none;
+}
+.previewExperience .experienceDisplay,
+.previewEducation .educationDisplay {
+  background-color: white;
+}
+.experienceList,
+.educationList {
+  list-style: none;
+}
+.experienceX,
+.educationX {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.jobTitleContainer {
+  display: flex;
+  gap: 5px;
+  align-items: end;
+}
+
+.previewExperience,
+.previewEducation {
+  margin-left: 15px;
+}
+.previewExperience li,
+.previewEducation li {
+  margin-bottom: 10px;
+}
+
+.courseUniContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.courseUniversityDisplay {
+  font-style: italic;
+}
+
+.previewSkillsContainer,
+.previewLangContainer,
+.previewHobbyContainer,
+.contactContainer {
+  margin-top: 15px;
+}
+.resumeRight h2 {
+  color: #13417f;
+}
+
+.previewSkillsContainer h3,
+.previewLangContainer h3,
+.previewHobbyContainer h3,
+.contactContainer h3 {
+  color: #13417f;
+}
+
+.skillsContainer button,
+.langContainer button,
+.hobbyContainer button,
+.experienceContainer button,
+.educationContainer button {
+  background-color: #ff6961;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.skillsContainer button:hover,
+.langContainer button:hover,
+.hobbyContainer button:hover,
+.experienceContainer button:hover,
+.educationContainer button:hover {
+  background-color: #e74c3c;
+}
+
+.langContainer input,
+.hobbyContainer input,
+.skillsContainer input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.skillItemContainer li,
+.langItemContainer li,
+.hobbyItemContainer li {
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.contactContainer ul li,
+.previewSkillsContainer ul li,
+.previewLangContainer ul li,
+.previewHobbyContainer ul li {
+  margin: 20px;
+}
+
+@media print {
+  .previewName {
+    text-align: center;
+    color: white;
+    background-color: #13417f;
+    padding: 15px;
+    text-transform: capitalize;
+    margin-top: 0;
+  }
+}
